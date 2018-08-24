@@ -1,0 +1,84 @@
+body {
+  text-align: center;
+  margin: auto;
+  background-color: lightgray;
+  font-size: 16px;
+}
+
+.spacer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#articles {
+  display: inline-block;
+  overflow: auto;
+  width: 80%;
+  height: 800px;
+  background-image: url("../images/linedpaper.png");
+  border: 3px dotted darkslategray;
+  border-radius: 10px;
+}
+
+.read-article-button{
+  border: solid gray 1px;
+}
+
+textarea,
+input {
+  display: block;
+  width: 100%;
+  background-image: url("../images/linedpaper.png");
+}
+
+input {
+  height: 36px;
+  font-size: 24px;
+}
+
+textarea {
+  height: 200px;
+  font-size: 18px;
+}
+
+.article-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.article-intro {
+  font-weight: normal;
+}
+
+.article-block {
+  margin: 10px;
+}
+
+.btn {
+  margin: 8px 8px;
+}
+
+nav.navbar.navbar-expand-sm.navbar-dark {
+  background-color: firebrick;
+}
+
+img {
+  height: 6rem;
+}
+
+a.nav-link {
+  font-size: 20px;
+}
+
+li.nav-item {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+}
+
+#scrapebutton {
+  font-size: 20px;
+}
+

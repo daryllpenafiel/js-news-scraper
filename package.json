@@ -1,0 +1,29 @@
+{
+  "name": "js-news-scraper",
+  "version": "1.0.0",
+  "description": "A full stack app that scrapes the Echo JS website. Utilizes MongoDB as the database, Mongoose as the ORM, and Cheerio as the scraper.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daryllpenafiel/js-news-scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daryllpenafiel/js-news-scraper/issues"
+  },
+  "homepage": "https://github.com/daryllpenafiel/js-news-scraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.2.9",
+    "morgan": "^1.9.0"
+  }
+}
