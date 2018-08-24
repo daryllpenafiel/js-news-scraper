@@ -13,7 +13,7 @@ var db = require("./models");
 
 var app = express();
 var PORT = process.env.PORT || 3000;
-
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/scraped_articles";
 // Use morgan logger for logging requests
 app.use(logger("dev"));
 
@@ -21,7 +21,8 @@ app.use(logger("dev"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/scraped_articles");
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI);
 
 //Handlebars
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
